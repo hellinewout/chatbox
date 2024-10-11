@@ -1,0 +1,158 @@
+h1, h2, p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+}
+body{
+    background-image: url("../beelden/background.jpg");
+}
+
+main{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    margin: 50px;
+}
+
+#contact{
+    background-color: rgba(0, 0, 0, 0.638);
+}
+#contact > article{
+    border: solid 1px white;
+    display: grid;
+    grid-template-columns: 30% 1fr;
+}
+#contact > article > figure > img{
+    width: 100px;
+}
+#contact > article > h1{
+    font-size: 20px;
+    margin-top: 15%;
+}
+
+textarea.input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    resize: none; /* Voorkom dat de gebruiker de grootte van de textarea kan veranderen */
+    box-sizing: border-box; /* Houdt padding en borders binnen de breedte */
+}
+
+
+
+
+
+
+
+
+
+#chat{
+    background-color: rgba(255, 255, 255, 0.589);
+}
+#chatBox{
+    
+    height: 500px;
+}
+#chatInput{
+    margin-left: 10px;
+    width: 80%;
+    align-items: end;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: solid 1px white;
+    margin-top: 10px;
+    background-color: black;
+    color: white;
+}
+
+#tekstChat{
+    color: black;
+}
+
+
+
+
+/* Chatbox stijlen */
+.chatBox {
+    padding: 15px;
+    border: 1px solid #ccc;
+    height: 300px; /* Pas aan naar wens */
+    overflow-y: auto; /* Scroll wanneer nodig */
+    display: flex;
+    flex-direction: column; /* Berichten onder elkaar plaatsen */
+}
+
+/* Algemene stijl voor elk bericht */
+.message {
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 8px;
+    max-width: 70%; /* Beperk de breedte van elk bericht */
+    word-wrap: break-word; /* Lange woorden worden afgebroken */
+}
+
+/* Stijl voor berichten van de gebruiker (rechts uitgelijnd) */
+.user-message {
+    background-color: #dcf8c6; /* Lichtgroen voor berichten van de gebruiker */
+    align-self: flex-end; /* Rechts uitlijnen */
+    text-align: right; /* Tekst rechts uitlijnen */
+}
+
+/* Stijl voor berichten van de ander (links uitgelijnd) */
+.other-message {
+    background-color: #f1f1f1; /* Lichtgrijs voor berichten van anderen */
+    align-self: flex-start; /* Links uitlijnen */
+    text-align: left; /* Tekst links uitlijnen */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* From Uiverse.io by adamgiebl */ 
+button {
+    margin-bottom: 10px;
+    --green: rgb(0, 4, 255);
+    font-size: 15px;
+    width: 15%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    letter-spacing: 0.06em;
+    position: relative;
+    font-family: inherit;
+    border-radius: 0.6em;
+    overflow: hidden;
+    transition: all 0.3s;
+    line-height: 1.4em;
+    border: 2px solid var(--green);
+    background: linear-gradient(to right, rgba(80, 27, 253, 0.1) 1%, transparent 40%,transparent 60% , rgba(102, 27, 253, 0.1) 100%);
+    color: var(--green);
+    box-shadow: inset 0 0 10px rgba(91, 27, 253, 0.4), 0 0 9px 3px rgba(174, 27, 253, 0.1);
+  }
+  
+  button:hover {
+    color: rgb(0, 4, 255);
+    box-shadow: inset 0 0 10px rgb(0, 4, 255), 0 0 9px 3px rgba(99, 27, 253, 0.2);
+  }
+  
+  button:before {
+    content: "";
+    position: absolute;
+    left: -4em;
+    width: 4em;
+    height: 100%;
+    top: 0;
+    transition: transform .4s ease-in-out;
+    background: linear-gradient(to right, transparent 1%, rgba(68, 27, 253, 0.1) 40%,rgba(46, 27, 253, 0.1) 60% , transparent 100%);
+  }
+  
+  button:hover:before {
+    transform: translateX(15em);
+  }

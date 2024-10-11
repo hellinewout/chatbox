@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../stijlen/normalize.css">
+    <link rel="stylesheet" href="../stijlen/home.css">
+    <meta name="author" content="Ewout Hellin">
+    <meta name="description" content="login, chatbox">
+    <link rel="icon" href="beelden/logo.png">
+    <title>Chatbox</title>
+</head>
+<body>
+    <main>
+
+        <section id="contact">
+            <article>
+                <figure>
+                    <img src="../beelden/arne.png">
+                </figure>
+                <h1>Arne Vandenbussche</h1>
+            </article>
+        </section>
+
+        <section id="chat">
+            <section id="chatBox" class="chatBox">
+                <p id="tekstChat"></p>
+            </section>
+            <textarea id="chatInput" class="input" type="text" placeholder="Type uw tekst"></textarea>
+            <button onclick="send()" id="send-btn"> Send </button>
+        </section>       
+
+    </main>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

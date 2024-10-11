@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../stijlen/normalize.css">
+    <link rel="stylesheet" href="../stijlen/login.css">
+    <meta name="author" content="Ewout Hellin">
+    <meta name="description" content="registratie, account, chatbox">
+    <link rel="icon" href="../beelden/logo.png">
+    <title>Maak een Account</title>
+</head>
+<body>
+    <main>
+        <h1>Registreer</h1>
+        <h2>Naam</h2>
+        <div class="group">
+            <svg stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="icon1">
+                <path d="M7 17v1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1a3 3 0 0 0-3-3h-4a3 3 0 0 0-3 3Zm8-9a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"></path>
+            </svg>
+            <input id="registreerNaam" class="input" type="text" placeholder="Gebruikersnaam">
+        </div>
+
+        <h2>E-mail</h2>
+        <div class="group">
+            <svg stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="icon1">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <path d="M22 6l-10 7L2 6"></path>
+            </svg>
+            <input id="registreeremail" class="input" type="text" placeholder="Email">
+        </div>
+
+        <h2>Voer je wachtwoord in!</h2>
+        <div class="group">
+            <svg stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="icon">
+            <path d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" stroke-linejoin="round" stroke-linecap="round"></path>
+            </svg>
+            <input id="registreerWachtwoord" class="input" type="password" placeholder="Wachtwoord">
+        </div>
+
+        <h2>Voer je wachtwoord opnieuw in!</h2>
+        <div class="group">
+            <svg stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="icon">
+            <path d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" stroke-linejoin="round" stroke-linecap="round"></path>
+            </svg>
+            <input id="registreerWachtwoord1" class="input" type="password" placeholder="Wachtwoord">
+        </div>
+
+        <button onclick="registreer()" class="btn">
+            <span>Maak een account</span>
+          </button>
+
+          <p id="incorrect" ></p>
+
+        <a href="../index.html">Ik heb al een account</a>
+    </main>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
